@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Host
-Host: https://blog.eddiescj.dev
+Host: https://blog.eddiescj.dev/
 
 # Sitemaps
 Sitemap: https://blog.eddiescj.dev/sitemap.xml
