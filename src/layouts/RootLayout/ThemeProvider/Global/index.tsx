@@ -9,7 +9,11 @@ export const Global = () => {
   return (
     <_Global
       styles={css`
-        body {
+        :not(pre) > code[class*="language-"], pre[class*="language-"] {
+          background: #141414 !important;
+        }
+
+          body {
           margin: 0;
           padding: 0;
           color: ${theme.colors.gray12};
@@ -18,8 +22,8 @@ export const Global = () => {
           font-weight: ${pretendard.style.fontWeight};
           font-style: ${pretendard.style.fontStyle};
         }
-
-        * {
+        
+          * {
           color-scheme: ${theme.scheme};
           box-sizing: border-box;
         }
