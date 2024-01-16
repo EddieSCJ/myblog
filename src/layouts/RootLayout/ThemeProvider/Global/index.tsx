@@ -12,6 +12,15 @@ export const Global = () => {
         :not(pre) > code[class*="language-"], pre[class*="language-"] {
           background: #141414 !important;
         }
+        
+        pre[class*="language-"] {
+          border-radius: .5em;
+          border: .3em solid hsl(0, 0%, 33%); /* #282A2B */
+          box-shadow: 1px 1px .5em black inset;
+          margin: .5em 0;
+          overflow: auto;
+          padding: 1em;
+        }
 
           body {
           margin: 0;
@@ -77,6 +86,8 @@ export const Global = () => {
           margin: 0;
           border-top: 1px solid ${theme.colors.gray6};
         }
+        
+        
       `}
     />
   )
