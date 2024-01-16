@@ -28,7 +28,6 @@ const CONFIG = {
   notionConfig: {
     pageId: process.env.NOTION_PAGE_ID,
   },
-
   googleAnalytics: {
     enable: true,
     config: {
