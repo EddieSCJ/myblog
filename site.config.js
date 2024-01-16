@@ -1,7 +1,7 @@
 const CONFIG = {
   profile: {
     name: "EddieSCJ",
-    image: "/avatar.svg", // If you want to create your own notion avatar, check out https://notion-avatar.vercel.app
+    image: "/avatar.svg",
     role: "Backend developer",
     bio: "If you can dream it, I can build it for you.",
     email: "eddieprofessionalmail@gmail.com",
@@ -48,7 +48,7 @@ const CONFIG = {
     },
   },
   utterances: {
-    enable: false,
+    enable: true,
     config: {
       repo: process.env.NEXT_PUBLIC_UTTERANCES_REPO || "",
       "issue-term": "og:title",
@@ -62,8 +62,8 @@ const CONFIG = {
       appid: ""
     },
   },
-  isProd: process.env.VERCEL_ENV === "production", // distinguish between development and production environment (ref: https://vercel.com/docs/environment-variables#system-environment-variables)
-  revalidateTime: 21600 * 7, // revalidate time for [slug], index
+  isProd: process.env.VERCEL_ENV === "production",
+  revalidateTime: 21600 * 7,
 }
 
 module.exports = { CONFIG }
