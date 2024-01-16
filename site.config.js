@@ -11,7 +11,11 @@ const CONFIG = {
   },
   projects: [
     {
-      name: `Starwars API`,
+      name: "Medium Blog",
+      href: "https://eddiescj.medium.com/",
+    },
+    {
+      name: "Starwars API",
       href: "https://github.com/eddiescj/starwars-api-kotlin",
     },
   ],
