@@ -37,12 +37,6 @@ class MyDocument extends Document {
               />
             </>
           )}
-          <Script
-              async
-              src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6173323827482345"
-              crossOrigin="anonymous"
-              strategy="lazyOnload"
-          />
         </Head>
         <body>
           <Main />
