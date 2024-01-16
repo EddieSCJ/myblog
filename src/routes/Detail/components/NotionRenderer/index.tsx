@@ -57,7 +57,8 @@ const Code = dynamic(() =>
       import("prismjs/components/prism-yaml.js"),
     ])
     return m.Code
-  })
+  }),
+  { ssr: true }
 )
 
 const Collection = dynamic(() =>
