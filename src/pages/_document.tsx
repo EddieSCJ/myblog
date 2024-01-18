@@ -7,7 +7,7 @@ class MyDocument extends Document {
     return (
       <Html lang={CONFIG.lang}>
         <Head>
-          <link rel="icon" href="/favicon.ico" />
+          <link rel="icon" href="/favicon.ico"/>
           <link
             rel="apple-touch-icon"
             sizes="192x192"
@@ -19,6 +19,7 @@ class MyDocument extends Document {
             title="RSS 2.0"
             href="/feed"
           ></link>
+          <meta name="linguana-site-verification" content="EO7rusS6EzrRCwj7mBEh"/>
           {/* google search console */}
           {CONFIG.googleSearchConsole.enable === true && (
             <>
@@ -39,8 +40,8 @@ class MyDocument extends Document {
           )}
         </Head>
         <body>
-          <Main />
-          <NextScript />
+        <Main/>
+        <NextScript/>
         </body>
       </Html>
     )
