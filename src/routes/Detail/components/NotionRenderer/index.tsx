@@ -15,6 +15,7 @@ import "prismjs/themes/prism-tomorrow.css"
 import "katex/dist/katex.min.css"
 import { FC } from "react"
 import styled from "@emotion/styled"
+import Translator from "./../../../Common/Translator";
 
 
 const _NotionRenderer = dynamic(
@@ -59,6 +60,7 @@ const NotionRenderer: FC<Props> = ({ recordMap }) => {
   const [scheme] = useScheme()
   return (
     <StyledWrapper>
+      <Translator />
       <_NotionRenderer
         darkMode={scheme === "dark"}
         recordMap={recordMap}
