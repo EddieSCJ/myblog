@@ -61,7 +61,7 @@ const NotionRenderer: FC<Props> = ({ recordMap }) => {
   return (
     <StyledWrapper>
       <Translator />
-      <StyledAlert>A lingua mãe dos posts é a Lingua Portuguesa Brasileira.</StyledAlert>
+      <StyledAlert>O idioma de origem dos posts é a Lingua Portuguesa Brasileira.</StyledAlert>
       <StyledAlert> As traduções podem não ser precisas, pois são feitas pelo google tradutor, logo, se houver algo estranho, procure mais fontes de tradução, ou me contate. </StyledAlert>
       <_NotionRenderer
         darkMode={scheme === "dark"}
