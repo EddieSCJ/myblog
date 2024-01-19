@@ -9,7 +9,7 @@ import { useCategoriesQuery } from "src/hooks/useCategoriesQuery"
 type Props = {}
 
 const Translator: React.FC<Props> = () => {
-  const languages: Record<string, string> = {"pt": "🇧🇷 Portuguese","en":"🇺🇸 English"}
+  const languages: Record<string, string> = {"pt": "🇧🇷 Portuguese","en":"🇺🇸 English", "fr": "🇫🇷 French", "es": "🇪🇸 Spanish", "de": "🇩🇪 German", "it": "🇮🇹 Italian", "ja": "🇯🇵 Japanese", "ko": "🇰🇷 Korean", "ru": "🇷🇺 Russian", "zh-CN": "🇨🇳 Chinese (Simplified)", "zh-TW": "🇨🇳 Chinese (Traditional)"}
 
   const [dropdownRef, opened, handleOpen] = useDropdown()
   const handleOptionClick = (targetLanguage: any) => {

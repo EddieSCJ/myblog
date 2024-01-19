@@ -31,8 +31,9 @@ const ServiceCard: React.FC = () => {
 export default ServiceCard
 
 const StyledTitle = styled.div`
-  padding: 0.25rem;
-  margin-bottom: 0.75rem;
+    padding: 0.25rem;
+    margin-bottom: 0.5rem;
+    margin-top: 1.25rem;
 `
 
 const StyledWrapper = styled.div`
