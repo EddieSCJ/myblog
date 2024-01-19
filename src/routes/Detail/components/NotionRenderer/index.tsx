@@ -13,7 +13,7 @@ import "prismjs/themes/prism-tomorrow.css"
 // used for rendering equations (optional)
 
 import "katex/dist/katex.min.css"
-import { FC } from "react"
+import React, { FC } from "react"
 import styled from "@emotion/styled"
 import Translator from "./../../../Common/Translator";
 
@@ -61,6 +61,7 @@ const NotionRenderer: FC<Props> = ({ recordMap }) => {
   return (
     <StyledWrapper>
       <Translator />
+      <StyledAlert>A lingua mãe dos posts é a Lingua Portuguesa Brasileira.</StyledAlert>
       <StyledAlert> As traduções podem não ser precisas, pois são feitas pelo google tradutor, logo, se houver algo estranho, procure mais fontes de tradução, ou me contate. </StyledAlert>
       <_NotionRenderer
         darkMode={scheme === "dark"}
@@ -98,4 +99,5 @@ const StyledAlert = styled.div`
     align-items: center;
     color: red;
     font-weight: bold;
+    margin-bottom: 1rem;
 `

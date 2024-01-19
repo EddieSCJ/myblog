@@ -15,6 +15,9 @@ const FeedHeader: React.FC<Props> = () => {
         <OrderButtons/>
       </StyledWrapper>
       <StyledAlert>
+        A lingua mãe dos posts é a Lingua Portuguesa Brasileira.
+      </StyledAlert>
+      <StyledAlert>
         As traduções podem não ser precisas, pois são feitas pelo google tradutor, logo, se houver algo estranho, procure mais fontes de tradução, ou me contate.
       </StyledAlert>
     </div>
