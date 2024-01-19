@@ -13,7 +13,7 @@ const Translator: React.FC<Props> = () => {
 
   const [dropdownRef, opened, handleOpen] = useDropdown()
   const handleOptionClick = (targetLanguage: any) => {
-    const baseURL = `https://blog-eddiescj-dev.translate.goog/${window.location.pathname}?_x_tr_sl=${"pt"}&_x_tr_tl=${targetLanguage}&_x_tr_hl=pt-BR&_x_tr_pto=wapp&_x_tr_hist=true`
+    const baseURL = `https://blog-eddiescj-dev.translate.goog/${window.location.pathname}?_x_tr_sl=pt&_x_tr_tl=${targetLanguage}&_x_tr_hl=pt-BR&_x_tr_pto=wapp&_x_tr_hist=true`
     window.open(baseURL, "_blank")
   }
 
