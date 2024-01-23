@@ -20,24 +20,29 @@ const Feed: React.FC<Props> = () => {
 
   return (
     <StyledWrapper>
+      <meta lang="pt-BR"/>
+      <meta lang="pt"/>
+      <meta lang="en"/>
+      <meta lang="en-US"/>
+      <meta lang="en-UK"/>
       <div
         className="lt"
         css={{
           height: `calc(100vh - ${HEADER_HEIGHT}px)`,
         }}
       >
-        <TagList />
+        <TagList/>
       </div>
       <div className="mid">
-        <MobileProfileCard />
-        <SearchInput value={q} onChange={(e) => setQ(e.target.value)} />
+        <MobileProfileCard/>
+        <SearchInput value={q} onChange={(e) => setQ(e.target.value)}/>
         <div className="tags">
-          <TagList />
+          <TagList/>
         </div>
-        <FeedHeader />
-        <PostList q={q} />
+        <FeedHeader/>
+        <PostList q={q}/>
         <div className="footer">
-          <Footer />
+          <Footer/>
         </div>
       </div>
       <div
@@ -46,11 +51,11 @@ const Feed: React.FC<Props> = () => {
           height: `calc(100vh - ${HEADER_HEIGHT}px)`,
         }}
       >
-        <ProfileCard />
-        <ContactCard />
-        <ServiceCard />
+        <ProfileCard/>
+        <ContactCard/>
+        <ServiceCard/>
         <div className="footer">
-          <Footer />
+          <Footer/>
         </div>
       </div>
     </StyledWrapper>
@@ -60,10 +65,10 @@ const Feed: React.FC<Props> = () => {
 export default Feed
 
 const StyledWrapper = styled.div`
-  grid-template-columns: repeat(12, minmax(0, 1fr));
+    grid-template-columns: repeat(12, minmax(0, 1fr));
 
-  padding: 2rem 0;
-  display: grid;
+    padding: 2rem 0;
+    display: grid;
   gap: 1.5rem;
 
   @media (max-width: 768px) {

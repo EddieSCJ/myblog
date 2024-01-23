@@ -60,9 +60,15 @@ const NotionRenderer: FC<Props> = ({ recordMap }) => {
   const [scheme] = useScheme()
   return (
     <StyledWrapper>
-      <Translator />
+      <meta lang="pt-BR"/>
+      <meta lang="pt"/>
+      <meta lang="en"/>
+      <meta lang="en-US"/>
+      <meta lang="en-UK"/>
+      <Translator/>
       <StyledAlert>O idioma de origem dos posts é a Lingua Portuguesa Brasileira.</StyledAlert>
-      <StyledAlert> As traduções podem não ser precisas, pois são feitas pelo google tradutor, logo, se houver algo estranho, procure mais fontes de tradução, ou me contate. </StyledAlert>
+      <StyledAlert> As traduções podem não ser precisas, pois são feitas pelo google tradutor, logo, se houver algo
+        estranho, procure mais fontes de tradução, ou me contate. </StyledAlert>
       <_NotionRenderer
         darkMode={scheme === "dark"}
         recordMap={recordMap}
@@ -84,8 +90,9 @@ const NotionRenderer: FC<Props> = ({ recordMap }) => {
 export default NotionRenderer
 
 const StyledWrapper = styled.div`
-  /* // TODO: why render? */
-  .notion-collection-page-properties {
+    /* // TODO: why render? */
+
+    .notion-collection-page-properties {
     display: none !important;
   }
   .notion-page {

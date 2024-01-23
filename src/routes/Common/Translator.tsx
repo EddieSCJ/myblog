@@ -19,21 +19,26 @@ const Translator: React.FC<Props> = () => {
 
   return (
     <StyledWrapper>
+      <meta lang="pt-BR"/>
+      <meta lang="pt"/>
+      <meta lang="en"/>
+      <meta lang="en-US"/>
+      <meta lang="en-UK"/>
       <div ref={dropdownRef} className="wrapper" onClick={handleOpen}>
-        {languages["pt"]} <MdExpandMore />
+        {languages["pt"]} <MdExpandMore/>
       </div>
       {opened && (
         <div className="content">
           {Object.keys(languages).map((key, idx) => {
-              return (
-                <div
-                  className="item"
-                  key={idx}
-                  onClick={() => handleOptionClick(key)}
-                >
-                  {languages[key]}
-                </div>
-              )
+            return (
+              <div
+                className="item"
+                key={idx}
+                onClick={() => handleOptionClick(key)}
+              >
+                {languages[key]}
+              </div>
+            )
           })}
         </div>
       )}

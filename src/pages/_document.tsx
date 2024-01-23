@@ -6,6 +6,11 @@ class MyDocument extends Document {
   render() {
     return (
       <Html lang={CONFIG.lang}>
+        <meta lang="pt-BR"/>
+        <meta lang="pt"/>
+        <meta lang="en"/>
+        <meta lang="en-US"/>
+        <meta lang="en-UK"/>
         <Head>
           <link rel="icon" href="/favicon.ico" />
           <link
