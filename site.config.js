@@ -1,7 +1,7 @@
 const CONFIG = {
   profile: {
     name: "EddieSCJ",
-    image: "/avatar.svg",
+    image: "/avatar.png",
     role: "Backend developer",
     bio: "If you can dream it, I can build it for you.",
     email: "eddieprofessionalmail@gmail.com",
