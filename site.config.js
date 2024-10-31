@@ -15,9 +15,13 @@ const CONFIG = {
       href: "https://eddiescj.medium.com/",
     },
     {
-      name: "Starwars API",
-      href: "https://github.com/eddiescj/starwars-api-kotlin",
+      name: "Substack",
+      href: "https://eddiescj.substack.com",
     },
+    {
+      name: "Cardoso Tecnologia",
+      href: "https://cardosotecnologia.com",
+    }
   ],
   blog: {
     title: "MyBlog",
