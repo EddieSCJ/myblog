@@ -1,7 +1,7 @@
 const CONFIG = {
   profile: {
     name: "EddieSCJ",
-    image: "/avatar.png",
+    image: "/avatar.jpeg",
     role: "Backend developer",
     bio: "If you can dream it, I can build it for you.",
     email: "eddieprofessionalmail@gmail.com",
@@ -15,9 +15,13 @@ const CONFIG = {
       href: "https://eddiescj.medium.com/",
     },
     {
-      name: "Starwars API",
-      href: "https://github.com/eddiescj/starwars-api-kotlin",
+      name: "Substack",
+      href: "https://eddiescj.substack.com",
     },
+    {
+      name: "Cardoso Tecnologia",
+      href: "https://cardosotecnologia.com",
+    }
   ],
   blog: {
     title: "MyBlog",

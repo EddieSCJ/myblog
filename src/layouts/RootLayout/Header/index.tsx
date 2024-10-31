@@ -1,4 +1,3 @@
-import NavBar from "./NavBar"
 import Logo from "./Logo"
 import ThemeToggle from "./ThemeToggle"
 import styled from "@emotion/styled"
@@ -15,7 +14,6 @@ const Header: React.FC<Props> = ({ fullWidth }) => {
         <Logo />
         <div className="nav">
           <ThemeToggle />
-          <NavBar />
         </div>
       </div>
     </StyledWrapper>
