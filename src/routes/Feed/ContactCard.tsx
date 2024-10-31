@@ -1,10 +1,10 @@
 import { CONFIG } from "site.config"
 import React from "react"
 import {
-  AiOutlineInstagram,
-  AiOutlineGithub,
-  AiOutlineMail,
-  AiFillLinkedin,
+    AiOutlineInstagram,
+    AiOutlineGithub,
+    AiOutlineMail,
+    AiFillLinkedin, AiOutlineGlobal,
 } from "react-icons/ai"
 import styled from "@emotion/styled"
 
@@ -13,6 +13,14 @@ const ContactCard: React.FC = () => {
     <>
       <StyledTitle>💬 Contact</StyledTitle>
       <StyledWrapper>
+          {CONFIG.profile.site && (
+          <a href={CONFIG.profile.site}
+            rel="noreferrer"
+            target="_blank"
+            >
+                <AiOutlineGlobal className="icon" />
+                <div className="name">site</div>
+            </a>)}
         {CONFIG.profile.github && (
           <a
             href={`https://github.com/${CONFIG.profile.github}`}

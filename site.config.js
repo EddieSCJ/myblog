@@ -7,9 +7,14 @@ const CONFIG = {
     email: "eddieprofessionalmail@gmail.com",
     linkedin: "eddiescj",
     github: "eddiescj",
+    site: "https://eddiescj.dev",
     instagram: "",
   },
   projects: [
+    {
+      name: "Cardoso Tecnologia",
+      href: "https://cardosotecnologia.com",
+    },
     {
       name: "Medium Blog",
       href: "https://eddiescj.medium.com/",
@@ -17,10 +22,6 @@ const CONFIG = {
     {
       name: "Substack",
       href: "https://eddiescj.substack.com",
-    },
-    {
-      name: "Cardoso Tecnologia",
-      href: "https://cardosotecnologia.com",
     }
   ],
   blog: {
